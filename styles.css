@@ -9,18 +9,40 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #e0e0e0;
+    color: #121212;
+}
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333333;
+    color: #e0e0e0;
+}
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+    color: #e0e0e0;
+}
+
+button {
+    margin: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+
+a {
+    color: #0096FF;
 }
 
 /* Header Styling */
 header {
     background: linear-gradient(to right, #FF0019, #FF03C2); /* Gradient header */
-    color: white;
+    color: #e0e0e0;
     padding: 2rem;
     text-align: center;
 }
-
+.dark-mode header {
+  background: linear-gradient(to right, #036082, #239eca);
+}
 header h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -28,14 +50,17 @@ header h1 {
 
 header nav {
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 header nav a {
-    color: white;
-    margin: 0 15px;
+    color: #e0e0e0;
+    margin: 0 5px;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
+    background-color: #121212;
 }
 
 header nav a:hover {
@@ -53,7 +78,7 @@ section {
 }
 
 h2 {
-    color: #333;
+    color: #121212;
     font-size: 2rem;
     margin-bottom: 10px;
 }
@@ -65,8 +90,8 @@ p {
 
 /* Button Styling (for contact or action) */
 button {
-    background-color: #00cc99;
-    color: white;
+    background-color: #333333;
+    color: #e0e0e0;
     padding: 10px 20px;
     font-size: 1.2rem;
     border: none;
@@ -74,9 +99,17 @@ button {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+.dark-mode button {
+    background-color: #e0e0e0;
+    color: #333333;
+}
 
 button:hover {
-    background-color: #FF0019;
+    background-color: #333333;
+}
+.dark-mode button:hover {
+    background-color: #e0e0e0; /
+    color: #333333;
 }
 
 /* Footer Styling */
